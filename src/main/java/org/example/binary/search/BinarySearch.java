@@ -1,11 +1,10 @@
 package org.example.binary.search;
 
 import java.util.List;
-import java.util.Objects;
 
 public class BinarySearch {
 
-    private List<Integer> list;
+    private final List<Integer> list;
 
     public BinarySearch(List<Integer> list) {
         this.list = list;
