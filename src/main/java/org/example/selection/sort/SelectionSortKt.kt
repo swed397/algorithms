@@ -3,17 +3,17 @@ package org.example.selection.sort
 fun main() {
     val listToSort = arrayListOf(1, 5, 7, 3, 7, 3)
 
-    val sortedList = listToSort.selectionSort(listToSort)
+    val sortedList = listToSort.selectionSort()
     println(sortedList)
 }
 
-fun ArrayList<Int>.findSmallest(list: List<Int>): Int {
-    var smallestValue = list[0]
-    var smallestIndex = 0;
+fun ArrayList<Int>.findSmallest(): Int {
+    var smallestValue = this[0]
+    var smallestIndex = 0
 
-    for (i in list.indices) {
-        if (list[i] < smallestValue) {
-            smallestValue = list[i]
+    for (i in this.indices) {
+        if (this[i] < smallestValue) {
+            smallestValue = this[i]
             smallestIndex = i
         }
     }
@@ -21,15 +21,15 @@ fun ArrayList<Int>.findSmallest(list: List<Int>): Int {
     return smallestIndex
 }
 
-fun ArrayList<Int>.selectionSort(list: ArrayList<Int>): List<Int> {
+fun ArrayList<Int>.selectionSort(): List<Int> {
     val newList = mutableListOf<Int>()
-    val listSize = list.size
+    val listSize = this.size
 
     for (i in 0 until listSize) {
-        val smallestIndex: Int = this.findSmallest(list)
-        newList.add(list[smallestIndex])
+        val smallestIndex: Int = this.findSmallest()
+        newList.add(this[smallestIndex])
 
-        list.removeAt(smallestIndex)
+        this.removeAt(smallestIndex)
     }
 
     return newList
