@@ -7,7 +7,7 @@ fun main() {
     println(sortedList)
 }
 
-fun ArrayList<Int>.findSmallest(): Int {
+fun     ArrayList<Int>.findSmallest(): Int {
     var smallestValue = this[0]
     var smallestIndex = 0
 
