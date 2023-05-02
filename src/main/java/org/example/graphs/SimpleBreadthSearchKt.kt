@@ -5,7 +5,7 @@ import java.util.ArrayDeque
 
 fun main() {
 
-    val simpleBreadthSearch = SimpleBreadthSearchKt();
+    val simpleBreadthSearch = SimpleBreadthSearchKt()
     simpleBreadthSearch.sellerName = "Clair"
     val graph = simpleBreadthSearch.graph
 
