@@ -39,9 +39,8 @@ public class Recursion {
             return list.get(0) > list.get(1) ? list.get(0) : list.get(1);
         } else {
             list.remove(0);
-            var max = maxElem(list);
 
-            return max;
+            return maxElem(list);
         }
     }
 

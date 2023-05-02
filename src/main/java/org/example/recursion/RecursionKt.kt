@@ -1,7 +1,5 @@
 package org.example.recursion
 
-import java.util.stream.Stream
-
 fun main() {
     countDown(5)
 
@@ -48,7 +46,7 @@ fun maxElem(list: MutableList<Int>): Int =
 
 fun qsort(list: List<Int>): List<Int> {
     return if (list.size < 2) {
-        list;
+        list
     } else {
         val pivot = list[list.size / 2]
         val equal = list.filter { it == pivot }
