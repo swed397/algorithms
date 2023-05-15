@@ -1,6 +1,5 @@
 package org.example.dijkstras.alg;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 

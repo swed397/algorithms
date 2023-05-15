@@ -8,9 +8,9 @@ import java.util.Map;
 public class Dijkstras {
 
     private final List<String> proceed = new ArrayList<>();
-    private HashMap<String, Map<String, Integer>> graphMap;
-    private HashMap<String, Integer> costMap;
-    private HashMap<String, String> parentMap;
+    private final HashMap<String, Map<String, Integer>> graphMap;
+    private final HashMap<String, Integer> costMap;
+    private final HashMap<String, String> parentMap;
 
     public Dijkstras(HashMap<String, Map<String, Integer>> graphMap,
                      HashMap<String, Integer> costMap, HashMap<String, String> parentMap) {
