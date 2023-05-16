@@ -1,15 +1,14 @@
 package org.example.greedy;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
 public class Covering {
 
-    private Map<String, HashSet<String>> stationsMap;
-    private HashSet<String> statesSet;
-    private HashSet<String> finalSet = new HashSet<>();
+    private final Map<String, HashSet<String>> stationsMap;
+    private final HashSet<String> statesSet;
+    private final HashSet<String> finalSet = new HashSet<>();
 
     public Covering(HashSet<String> statesSet, Map<String, HashSet<String>> stationsMap) {
         this.statesSet = statesSet;
