@@ -1,11 +1,9 @@
 package org.example.dynam;
 
-import java.util.List;
-
 public class LongestWordPart {
 
-    private String wordA;
-    private String wordB;
+    private final String wordA;
+    private final String wordB;
     int[][] matrix;
 
     public LongestWordPart(String wordA, String wordB) {
