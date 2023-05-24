@@ -6,7 +6,7 @@ class BinaryTreeKt : BTreeActionsKt {
 
     private var root: NodeKt? = null
 
-    private fun insertRecursive(curentNode: NodeKt?, value: Int): NodeKt? {
+    private fun insertRecursive(curentNode: NodeKt?, value: Int): NodeKt {
         if (curentNode == null) {
             return NodeKt(value)
         }
